@@ -1,0 +1,313 @@
+h1{color: rgb(202, 226, 129);
+font-size: 20px;
+font-weight: 350;
+font-family: "Montserrat", sans-serif;
+size: 30px;
+}
+
+
+.estilo{
+    text-align: justify;
+    font-size: larger;
+    color: cornsilk;
+}
+
+
+.tipografía{
+    font-family: "Montserrat", sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }  
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card {
+background-color: rgb(25, 72, 44);
+max-width: 300px;
+text-align: center;
+border: 5px solid rgb(0, 0, 0);
+border-radius: 10px;
+padding: 5px;
+}
+
+
+.contenedor_limite{
+background-color:rgb(25, 72, 44);
+max-width: 700px;
+margin: 0 auto;
+}
+
+section{
+    margin: 50px;
+}
+
+header{
+    background-color:rgb(0, 108, 52);
+}
+
+footer h2{
+    font-size: 20px;
+    margin: auto;
+    padding: 10px;
+}
+
+footer{
+    background-color: rgb(0, 108, 52);
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat", sans-serif;
+}
+
+.clase_seis{
+    background-color: red;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contenedor_padre{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center
+}
+
+
+/*--------------media query------------------------*/
+
+@media screen and (max-width: 650px){
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 400px){}
+
+/*-------------grilla---------*/
+.parent {
+display: grid;
+max-width: 1200px;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+margin: 0 auto;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div1 img {width: 100%;}
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+.div2 img {width: 100%;}
+.div3 { grid-area: 3 / 1 / 4 / 2; }
+.div3 img {width: 100%;}
+.div4 { grid-area: 2 / 2 / 4 / 4; }
+.div4 img {width: 100%;}
+.div5 { grid-area: 1 / 2 / 2 / 3; }
+.div5 img {width: 100%;}
+.div6 { grid-area: 1 / 3 / 2 / 4; }
+.div6 img {width: 100%;}
+.div7 { grid-area: 1 / 4 / 2 / 5; }
+.div7 img {width: 100%;}
+.div8 { grid-area: 2 / 4 / 3 / 5; }
+.div8 img {width: 100%;}
+.div9 { grid-area: 3 / 4 / 4 / 5; }
+.div9 img {width: 100%;}
+
+nav a:hover{
+    color:white
+}
+
+h1:hover{
+transform: scale(1.5);
+}
+
+/*-------------------------------------------------extras que hice post 4/6-------------------------------------*/
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer li {
+  margin-bottom: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+footer a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+
+
+.navbar .nav-link {
+  color: #ffffff !important; 
+  transition: color 0.3s ease;
+}
+.navbar .nav-link:hover {
+  color: #000 !important; 
+}
+
+
+
+.sobre-nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px;
+  margin: 40px auto;
+  max-width: 900px;
+  border-radius: 12px;
+}
+.sobre-nosotros h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.sobre-nosotros p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+.margen-arriba {
+  margin-top: 40px;
+}
+
+/* espacio entre columnas */
+.fila {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.columna-4 {
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+  min-width: 280px; /* para que no se achique y quede feo*/
+}
+
+/* Todo sobre las cards */
+.tarjeta {
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.imagen-tarjeta {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.cuerpo-tarjeta {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.titulo-tarjeta {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.texto-tarjeta {
+  font-size: 0.95rem;
+  flex-grow: 1; /* ocupa espacio para empujar el botón hacia abajo */
+}
+
+.precio {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+.boton-comprar {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin-top: auto; /* para que quede al fondo */
+}
+
+
+/* Hover del botón cambia color a gris oscuro */
+.boton-comprar:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* Utilidad para margen arriba automático (empuja el botón abajo) */
+.margen-arriba-auto {
+  margin-top: auto;
+}
+
+.contenedor-grilla-movil {
+  width: 100vw;
+  overflow: hidden;
+  border-bottom: 2px solid #ddd;
+  padding: 10px 0;
+  background-color: #fafafa;
+}
+
+.pista-grilla {
+  display: flex;
+  width: calc(200%);
+  animation: mover-grilla 30s linear infinite;
+}
+
+.pista-grilla img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 10px;
+  user-select: none;
+  pointer-events: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+@keyframes mover-grilla {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* Evita scroll horizontal en toda la página porque queda horrible */
+body {
+  overflow-x: hidden;
+}
