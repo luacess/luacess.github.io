@@ -166,6 +166,8 @@ footer a:hover {
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
+  margin-top: 0px;
+  flex-grow: 1;
 }
 .tarjeta:hover {
   transform: translateY(-5px);
@@ -217,8 +219,13 @@ footer a:hover {
 }
 
 .margen-arriba-auto {
-  margin-top: auto;
+  margin-top: 40px;
 }
+
+.sin-margen-arriba {
+  margin-top: 0 !important;
+}
+
 
 .contenedor-grilla-movil {
   width: 100vw;
@@ -258,3 +265,68 @@ footer a:hover {
 body {
   overflow-x: hidden;
 }
+
+.introducción{
+  margin-left: 100px;
+}
+
+.introducción h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: none;
+  transform: none;
+}
+
+.introducción h1:hover {
+  font-size: 2.5rem;
+  transform: none;
+}
+
+.subtitulo{
+  margin-left: 100px;
+  margin-bottom: 0px;
+}
+
+.subtitulo h1{
+    font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: none;
+  transform: none;
+}
+
+.subtitulo h1:hover {
+    font-size: 2.5rem;
+  transform: none;
+}
+
+.subtitulo p {
+  margin-top: 0;
+  margin-bottom: 10px; /* o menos */
+}
+
+.subtituloo{
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+.subtituloo h1{
+    font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  transition: none;
+  transform: none;
+}
+
+.subtituloo h1:hover {
+    font-size: 2.5rem;
+  transform: none;
+}
+
+.subtituloo p {
+  margin-top: 0;
+  margin-bottom: 10px; /* o menos */
+}
+
+
