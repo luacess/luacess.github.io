@@ -1,26 +1,4 @@
-h1{color: rgb(202, 226, 129);
-font-size: 20px;
-font-weight: 350;
-font-family: "Montserrat", sans-serif;
-size: 30px;
-}
 
-
-.estilo{
-    text-align: justify;
-    font-size: larger;
-    color: cornsilk;
-}
-
-
-.tipografía{
-    font-family: "Montserrat", sans-serif;
-    color: rgb(0, 0, 0);
-    text-decoration: underline;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-  }  
 
 *{
     margin: 0px;
@@ -32,28 +10,12 @@ size: 30px;
     max-width: 100%;
 }
 
-.card {
-background-color: rgb(25, 72, 44);
-max-width: 300px;
-text-align: center;
-border: 5px solid rgb(0, 0, 0);
-border-radius: 10px;
-padding: 5px;
-}
-
-
-.contenedor_limite{
-background-color:rgb(25, 72, 44);
-max-width: 700px;
-margin: 0 auto;
-}
-
 section{
     margin: 50px;
 }
 
 header{
-    background-color:rgb(0, 108, 52);
+    background-color:rgb(0, 59, 108);
 }
 
 footer h2{
@@ -63,23 +25,10 @@ footer h2{
 }
 
 footer{
-    background-color: rgb(0, 108, 52);
+    background-color: rgb(0, 59, 108);
     font-size: 15px;
     color: rgb(255, 255, 255);
     font-family: "Montserrat", sans-serif;
-}
-
-.clase_seis{
-    background-color: red;
-    max-width: 1200px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.contenedor_padre{
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: center
 }
 
 
@@ -95,7 +44,6 @@ footer{
         flex-direction: column;
     }
 }
-
 
 @media screen and (max-width: 400px){}
 
@@ -144,6 +92,7 @@ footer ul {
 }
 footer li {
   margin-bottom: 10px;
+  margin-left: 10px;
 }
 footer a {
   text-decoration: none;
@@ -262,14 +211,11 @@ footer a:hover {
   margin-top: auto; /* para que quede al fondo */
 }
 
-
-/* Hover del botón cambia color a gris oscuro */
 .boton-comprar:hover {
-  background-color: #333;
+  background-color: rgb(51, 51, 51);
   color: white;
 }
 
-/* Utilidad para margen arriba automático (empuja el botón abajo) */
 .margen-arriba-auto {
   margin-top: auto;
 }
@@ -277,9 +223,9 @@ footer a:hover {
 .contenedor-grilla-movil {
   width: 100vw;
   overflow: hidden;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid rgb(221, 221, 221);
   padding: 10px 0;
-  background-color: #fafafa;
+  background-color: rgb(250, 250, 250);
 }
 
 .pista-grilla {
@@ -307,6 +253,7 @@ footer a:hover {
     transform: translateX(-50%);
   }
 }
+
 /* Evita scroll horizontal en toda la página porque queda horrible */
 body {
   overflow-x: hidden;
